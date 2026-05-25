@@ -2,6 +2,24 @@
 
 > transcript: FTS5 index over ~/.claude/projects/*.jsonl session traces.
 
+## Install
+
+### One-liner
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/j0yen/session-index/main/install.sh | bash
+```
+
+### Manual
+
+```sh
+git clone --depth 1 https://github.com/j0yen/session-index.git
+cd session-index
+./install.sh
+```
+
+Installs the `transcript` binary via `cargo install --path . --locked`. Requires `cargo` / `rustc 1.85+` and `git`. Built binary lands in `~/.cargo/bin/`.
+
 ## Build
 
 ```sh
